@@ -1,0 +1,1 @@
+console.log("Código do cabeçalho da pagina");
