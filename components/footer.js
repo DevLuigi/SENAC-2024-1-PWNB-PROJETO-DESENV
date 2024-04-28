@@ -1,1 +1,0 @@
-console.log("Código do rodapé da pagina");

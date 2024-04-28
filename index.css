@@ -1,3 +1,17 @@
 body {
     margin: 0px;
 }
+
+main {
+    display: flex;
+    flex-direction: row;
+    height: 78.1vh;
+}
+
+section {
+    width: 100%;
+}
+
+h1 {
+    margin-left: 1em;
+}
