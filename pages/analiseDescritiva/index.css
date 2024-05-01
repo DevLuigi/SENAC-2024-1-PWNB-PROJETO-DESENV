@@ -1,3 +1,12 @@
+* {
+    font-family: sans-serif;
+}
+
 body {
     margin: 0px;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
 }

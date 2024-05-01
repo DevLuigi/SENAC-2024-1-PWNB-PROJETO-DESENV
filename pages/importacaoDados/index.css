@@ -1,3 +1,21 @@
+* {
+    font-family: sans-serif;
+}
+
 body {
     margin: 0px;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+}
+
+.shape-cinza {
+    height: 60em;
+    width: 59.5em;
+    
+    border-radius: .5em;
+
+    background-color: #f0f0f0;
 }
