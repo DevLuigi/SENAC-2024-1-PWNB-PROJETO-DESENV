@@ -9,4 +9,5 @@ body {
 div {
     display: flex;
     flex-direction: row;
+    height: 87.5vh;
 }
