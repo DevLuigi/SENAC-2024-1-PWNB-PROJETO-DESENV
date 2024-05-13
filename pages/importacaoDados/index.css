@@ -9,20 +9,5 @@ body {
 div {
     display: flex;
     flex-direction: row;
-    height: 87.5vh;
+    height: 85.1vh;
 }
-
-.shape-cinza {
-    height: 36em;
-    width: 64em;
-    
-    border-radius: .5em;
-
-    background-color: #f0f0f0;
-}
-
-@media screen and (max-width: 1366px) {
-        .shape-cinza {
-            width: 62.5em;
-        }
-  }

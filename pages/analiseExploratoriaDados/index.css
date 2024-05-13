@@ -9,5 +9,9 @@ body {
 div {
     display: flex;
     flex-direction: row;
-    height: 87.5vh;
+    height: 85.1vh;
+}
+
+#grafico-torta > div {
+    height: 20em;
 }
