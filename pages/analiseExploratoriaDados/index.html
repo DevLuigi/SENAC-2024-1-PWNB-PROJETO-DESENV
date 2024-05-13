@@ -6,14 +6,60 @@
     <link rel="stylesheet" href="index.css">
     <link rel="shortcut icon" href="/assets/logo.png" type="image/x-icon">
     <script type="module" src="/lib/lib.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="index.js"></script>
     <title>DataScript Analytics</title>
 </head>
 <body>
     <wc-header user="Luigi da silva coelho"></wc-header>
     <div>
         <wc-menu></wc-menu>
-        <wc-content titleContent="Análise Exploratória de Dados"></wc-content>
+        <wc-content titleContent="Análise Exploratória de Dados">
+            <div id="grafico-barras" style="margin: 1em; max-width: 98%; height: 93%"></div>
+            <div id="grafico-torta" style="margin: 1em; max-width: 98%; height:100%"></div>
+        </wc-content>
     </div>
     <wc-footer></wc-footer>
+    
+    <!-- Gráfico de barras -->
+    <script>
+        google.charts.load('current',{packages:['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+        
+        // Your Function
+        function drawChart() {
+            const data = google.visualization.arrayToDataTable(simularDados());
+            
+            // Set Options
+            const options = {
+                title: 'Porcentagem de torcedores por clube',
+            };
+            
+            // Draw
+            const chart = new google.visualization.BarChart(document.getElementById('grafico-barras'));
+            chart.draw(data, options);
+        }
+    </script>
+    
+    <!-- Gráfico de torta 3D -->
+    <script>
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+        
+        function drawChart() {
+            // Set Data
+            const data = google.visualization.arrayToDataTable(simularDados());
+            
+            // Set Options
+            const options = {
+                title:'Porcentagem de torcedores por clube',
+                is3D:true
+            };
+            
+            // Draw
+            const chart = new google.visualization.PieChart(document.getElementById('grafico-torta'));
+            chart.draw(data, options);    
+        }
+    </script>
 </body>
 </html>
