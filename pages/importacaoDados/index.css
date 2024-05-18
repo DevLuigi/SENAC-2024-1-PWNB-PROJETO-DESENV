@@ -11,3 +11,26 @@ div {
     flex-direction: row;
     height: 85.1vh;
 }
+
+.container-inputs {
+    display: flex;
+    flex-direction: column;
+
+    margin: 2em 0em 0em 2em;
+}
+
+.container-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    width: 30em;
+    height: 3em;
+    
+    margin: 1em 0em 0em 0em;
+}
+
+button {
+    height: 2.5em;
+    width: 10em;
+}
