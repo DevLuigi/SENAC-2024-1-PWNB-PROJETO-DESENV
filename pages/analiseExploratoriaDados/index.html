@@ -28,11 +28,11 @@
         
         // Your Function
         function drawChart() {
-            const data = google.visualization.arrayToDataTable(simularDados());
+            const data = google.visualization.arrayToDataTable(carregarDados("valor"));
             
             // Set Options
             const options = {
-                title: 'Porcentagem de torcedores por clube',
+                title: 'Valor total de vendas por produto',
             };
             
             // Draw
@@ -48,11 +48,11 @@
         
         function drawChart() {
             // Set Data
-            const data = google.visualization.arrayToDataTable(simularDados());
-            
+            const data = google.visualization.arrayToDataTable(carregarDados("quantidade"));
+            console.log(data);
             // Set Options
             const options = {
-                title:'Porcentagem de torcedores por clube',
+                title:'Quantidade de produtos vendidos',
                 is3D:true
             };
             
