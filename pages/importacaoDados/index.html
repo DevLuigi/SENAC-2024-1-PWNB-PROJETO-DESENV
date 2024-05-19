@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="shortcut icon" href="/assets/logo.png" type="image/x-icon">
     <script type="module" src="/lib/lib.js"></script>
+    <script src="index.js"></script>
     <title>DataScript Analytics</title>
 </head>
 <body>
@@ -13,18 +14,28 @@
     <div>
         <wc-menu></wc-menu>
         <wc-content titleContent="Importação de Dados">
-            <form class="container-inputs">
-                <wc-input label="Nome do cliente:" type=""></wc-input>
-                <wc-input label="Nome do produto:" type=""></wc-input>
-                <wc-input label="Nome da empresa:" type=""></wc-input>
-                <wc-input label="Quantidade vendida:" type="number"></wc-input>
-                <wc-input label="Valor total:" type="number"></wc-input>
-                <wc-input label="Data da venda:" type="date"></wc-input>
+            <form id="formulario" class="container-inputs">
+                <wc-input name="cliente"    label="Nome do cliente:"    type="" min="0"></wc-input>
+                <wc-input name="produto"    label="Nome do produto:"    type=""></wc-input>
+                <wc-input name="empresa"    label="Nome da empresa:"    type=""></wc-input>
+                <wc-input name="qtdVenda"   label="Quantidade vendida:" type="number"></wc-input>
+                <wc-input name="valorTotal" label="Valor total:"        type="number" min="0" max="100000"></wc-input>
+                <wc-input name="dataVenda"  label="Data da venda:"      type="date"></wc-input>
                 <div class="container-buttons">
-                    <button> Importar </button>
-                    <button> Cancelar </button>
+                    <button name="importar"> Importar </button>
+                    <button name="cancelar"> Cancelar </button>
                 </div>
             </form>
+            <script>
+                document.getElementById('formulario').addEventListener('submit', function(event) {
+                    var botaoSelecionado = document.activeElement;
+                    if (botaoSelecionado.name == "importar") {
+                        importar();
+                    } else {
+                        cancelar();
+                    }
+                });
+            </script>
         </wc-content>
     </div>
     <wc-footer></wc-footer>
