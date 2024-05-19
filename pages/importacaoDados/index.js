@@ -60,15 +60,13 @@ function inserirLocalStorage() {
 
         item = {
             cliente: input.name === "cliente" ? input.value : item.cliente,
-            produto: input.name === "produto" ? input.value : item.produto,
+            // para que os produtos sejam agrupados corretamente, usamos a função toLoweCase
+            produto: input.name === "produto" ? input.value.toLowerCase() : item.produto.toLowerCase(),
             empresa: input.name === "empresa" ? input.value : item.empresa,
             qtdVenda: input.name === "qtdVenda" ? input.value : item.qtdVenda,
-            valorTotal: input.name === "valorTotal" ? input.value : item.valorTotal,
+            valorTotal: input.name === "valorTotal" ? parseInt(input.value) * parseInt(item.qtdVenda) : item.valorTotal,
             dataVenda: input.name === "dataVenda" ? input.value : item.dataVenda
         }
-
-        delete element;
-        delete input;
     }
 
     vendas = [...vendas, item];
