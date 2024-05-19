@@ -1,12 +1,58 @@
 body {
-    margin: 0px;
+    font-family: sans-serif;
+    background-color: aliceblue;
 }
 
 div {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    height: 100vh;
 }
 
-a {
-    margin: 1em;
+input {
+    outline: none;
+    margin-bottom: 1em;
+    width: 400px
 }
+
+button {
+    width: 400px;
+}
+
+.parteBranca {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.partePreta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    background-color: #5a5959;
+    color: aliceblue;
+}
+
+.labelLogin {
+    font-size: 2em;
+    text-align: center;
+}
+
+img {
+    display: block;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom:3%
+}
+
+.lblp{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    justify-content: flex-start
+}
+

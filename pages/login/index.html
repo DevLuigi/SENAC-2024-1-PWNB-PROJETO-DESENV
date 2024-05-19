@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <script type="module" src="/lib/lib.js"> </script>
     <title>Login</title>
+    <style></style>
 </head>
+
 <body>
     <div>
-        <a href="../analiseDescritiva/index.html"> link para tela de analise Descritiva </a>
-        <a href="../analiseExploratoriaDados/index.html"> link para tela de analise Exploratoria de Dados </a>
-        <a href="../cadastrese/index.html"> link para tela de cadastre-se </a>
-        <a href="../importacaoDados/index.html"> link para tela de importação de dados </a>
+        <!-- <wc-layoutLogin> </wc-layoutLogin> -->
+        <div class="partePreta">
+            <img src="/assets/logo.png" width="150" height="100">
+            <label for="">Ferramenta para analise<br>de dados de negocio</label>
+        </div>
+
+        <div class="parteBranca">
+            <label class="labelLogin" for="">Login</label>
+            <label class="lblp" for="">Email</label>
+            <input type="text" placeholder="Email@gmail.com">
+            <label class="lblp" for="">Senha</label>
+            <input type="password" placeholder="Senha@123">
+            <button>Entrar</button>
+        </div>
     </div>
 </body>
+
 </html>
