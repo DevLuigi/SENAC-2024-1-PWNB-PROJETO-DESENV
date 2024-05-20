@@ -5,6 +5,7 @@ function importar() {
     } 
 
     inserirLocalStorage();
+    limpar();
     alert("inserido com sucesso");
 }
 
@@ -29,7 +30,7 @@ function validarInputObrigatorio() {
     return validacao;
 }
 
-function cancelar() {
+function limpar() {
     const component = window.document.getElementsByTagName("wc-input");
 
     for (let i = 0; i < component.length; i++) {

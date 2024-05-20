@@ -15,12 +15,19 @@
     <div>
         <wc-menu></wc-menu>
         <wc-content titleContent="Análise Exploratória de Dados">
-            <div id="grafico-barras" style="margin: 1em; max-width: 98%; height: 26em"></div>
-            <div id="grafico-torta" style="margin: 1em; max-width: 98%; height: 26em"></div>
+            <div id="grafico-barras" style="margin: 1em; max-width: 95%; height: 26em"></div>
+            <div id="grafico-torta" style="margin: 1em; max-width: 95%; height: 26em"></div>
         </wc-content>
     </div>
     <wc-footer></wc-footer>
-    
+    <script>
+        setTimeout(() => {
+            const vendas = JSON.parse(localStorage.getItem("vendas"));
+            if (vendas == null) {
+                alert('Não há dados a serem analisados, insira na tela de importação de dados');   
+            }
+        }, 200);
+    </script>
     <!-- Gráfico de barras -->
     <script>
         google.charts.load('current',{packages:['corechart']});

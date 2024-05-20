@@ -12,8 +12,18 @@
     <wc-header user="Luigi da silva coelho"></wc-header>
     <div>
         <wc-menu></wc-menu>
-        <wc-content titleContent="Análise Descritiva"></wc-content>
+        <wc-content titleContent="Análise Descritiva">
+            <wc-table></wc-table>
+        </wc-content>
     </div>
+    <script>
+        setTimeout(() => {
+            const vendas = JSON.parse(localStorage.getItem("vendas"));
+            if (vendas == null) {
+                alert('Não há dados a serem analisados, insira na tela de importação de dados');   
+            }
+        }, 200);
+    </script>
     <wc-footer></wc-footer>
 </body>
 </html>
