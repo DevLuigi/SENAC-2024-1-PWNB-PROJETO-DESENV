@@ -1,91 +1,12 @@
-body {
+* {
     font-family: sans-serif;
-    background-color: #F2F2F2;
 }
 
-div {
+body {
+    margin: 0px;
+}
+
+main {
     display: flex;
     flex-direction: row;
-    height: 100vh;
 }
-
-input {
-    outline: none;
-    margin-bottom: 1em;
-    width: 400px;
-    padding: .5em;
-}
-
-button {
-    height: 2.5em;
-    width: 26.2em;
-    background-color: #4169E1;
-    color: white;
-    border: none;
-    border-radius: 0.5em;
-}
-
-.parteBranca {
-    display: flex;
-    flex-direction: column;
-    width: 50vw;
-    justify-content: center;
-    align-items: center;
-}
-
-.partePreta {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50vw;
-    background-color: #363636;
-    color: rgb(255, 255, 255);
-}
-
-.partePreta label {
-    text-align: center;
-    font-size: 1.5em;
-}
-
-.labelLogin {
-    font-size: 2em;
-    text-align: center;
-}
-
-.alinhar-input {
-    display: flex;
-    flex-direction: column;
-    height: 4em;
-    margin-bottom: 0.5em;
-}
-
-img {
-    display: block;
-    flex-direction: column;
-    margin-bottom: 1em;
-    height: 12em;
-    width: 12em;
-}
-
-.lblp{
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-    justify-content: flex-start
-}
-
-.alinhar-input > input{
-    height: 5em;
-    width: 25em;
-    background-color:#F2F2F2 ;
-    border-color: #404040;
-    border-radius: 0.5em;
-}
-
-.lbl-cadastrese{
-
-}
-
-
-

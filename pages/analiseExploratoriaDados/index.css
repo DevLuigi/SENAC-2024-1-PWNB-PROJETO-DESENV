@@ -15,3 +15,9 @@ div {
 #grafico-torta > div {
     height: 20em;
 }
+
+@media(max-width: 1366px) {
+    div {
+        height: 84.1vh;
+    }
+}

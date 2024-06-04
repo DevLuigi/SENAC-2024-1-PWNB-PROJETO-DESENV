@@ -11,3 +11,9 @@ div {
     flex-direction: row;
     height: 85.1vh;
 }
+
+@media(max-width: 1366px) {
+    div {
+        height: 84.1vh;
+    }
+}

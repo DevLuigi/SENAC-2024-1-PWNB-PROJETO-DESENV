@@ -6,32 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <script type="module" src="/lib/lib.js"> </script>
-    <title>Login</title>
-    <style></style>
+    <link rel="shortcut icon" href="/assets/logo.png" type="image/x-icon">
+    <title>DataScript Analytics</title>
 </head>
 
 <body>
-    <div>
-        <!-- <wc-layoutLogin> </wc-layoutLogin> -->
-        <div class="partePreta">
-            <img src="/assets/logo.png">
-            <label for="">Ferramenta para analise<br>de dados de negocio</label>
-        </div>
-
-        <div class="parteBranca">
-            <label class="labelLogin" for="">Login</label>
-            <div class="alinhar-input">
-                <label class="lblp" for="">Email</label>
-                <input type="text" placeholder="Email@gmail.com">
-            </div>
-            <div class="alinhar-input">
-                <label class="lblp" for="">Senha</label>
-                <input type="password" placeholder="Senha@123">
-            </div>
-            <button>Entrar</button>
-            <label class="lbl-cadastrese"> Não tem uma conta? Cadastre-se</label>
-        </div>
-    </div>
+    <main>
+        <wc-parte-preta-login></wc-parte-preta-login>
+        <wc-parte-branca-login></wc-parte-branca-login>
+    </main>
 </body>
 
 </html>
